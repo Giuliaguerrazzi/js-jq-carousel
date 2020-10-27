@@ -10,6 +10,16 @@ $(document).ready( function() {
    direzione('prev');
  })
 
+// keyboard
+  $(document).keydown(function(event) {
+    
+    if (event.keyCode = 37) {
+      direzione('prev');
+    }
+    else if (event.keyCode = 39) {
+      direzione('next');
+    }
+  })
 })
 
 
@@ -32,7 +42,7 @@ $(document).ready( function() {
        iconActive.next('i').addClass('active');
      }
    }
-  else if (direction === 'prev') {
+   else if (direction === 'prev') {
      if (imageActive.hasClass('.first') === true) {
        $('.images img.last').addClass('active');
        $('.nav i.last').addClass('active');
