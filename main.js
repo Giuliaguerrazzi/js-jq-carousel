@@ -12,7 +12,7 @@ $(document).ready( function() {
 
 // keyboard
   $(document).keydown(function(event) {
-    
+
     if (event.keyCode = 37) {
       direzione('prev');
     }
@@ -33,7 +33,7 @@ $(document).ready( function() {
 
    // next
    if (direction === 'next') {
-     if (imageActive.hasClass('.last') === true) {
+     if (imageActive.hasClass('last') === true) {
        $('.images img.first').addClass('active');
        $('.nav i.first').addClass('active');
      }
@@ -43,7 +43,7 @@ $(document).ready( function() {
      }
    }
    else if (direction === 'prev') {
-     if (imageActive.hasClass('.first') === true) {
+     if (imageActive.hasClass('first') === true) {
        $('.images img.last').addClass('active');
        $('.nav i.last').addClass('active');
      }
